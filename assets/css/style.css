@@ -73,21 +73,24 @@ header nav ul li a:hover {
     background: #e5e5e5;
     display: flex;
     flex-wrap: wrap;
-    padding: 5rem 0 0 1rem;
+    padding: 2rem 0 0 1rem;
 }
 
 .recipe {
     background: #fdfdfd;
+    background: yellow;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 5rem;
     margin-right: 1rem;
     width: 100%;
 }
 
 .recipe-title {
-    font-size: 1.4375rem;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 .recipe-description {
@@ -97,6 +100,11 @@ header nav ul li a:hover {
 }
 
 .recipe-content {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
     padding: 1rem;
 }
 
@@ -109,8 +117,37 @@ header nav ul li a:hover {
 }
 
 .recipe-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
     border-radius: 15px;
 }
+
+.recipe:nth-child(1) .recipe-img {
+    background-image: url("../img/recipes/chip-cookies.jpg");
+}
+
+.recipe:nth-child(2) .recipe-img {
+    background-image: url("../img/recipes/lasagna.jpg");
+}
+
+.recipe:nth-child(3) .recipe-img {
+    background-image: url("../img/recipes/scrambled-veg.jpg");
+}
+
+.recipe:nth-child(4) .recipe-img {
+    background-image: url("../img/recipes/zuchini-ravioli.jpg");
+}
+
+.recipe:nth-child(5) .recipe-img {
+    background-image: url("../img/recipes/tomato-sauce.jpg");
+}
+
+.recipe:nth-child(6) .recipe-img {
+    background-image: url("../img/recipes/veggie-burger.jpg");
+}
+
 
 #about-us {
     font-weight: 100;
@@ -206,8 +243,8 @@ header nav ul li a:hover {
     }
 
     .recipe {
-        margin-right: 1rem;
-        width: calc(33% - 2.5rem);
+        margin-right: auto;
+        flex-basis: 300px;
     }
     
     .us {
@@ -226,7 +263,7 @@ header nav ul li a:hover {
     }
 
     .recipe {
-        margin-right: 5rem;
+        margin-right: auto;
         width: calc(25% - 5rem);
     }    
 }
