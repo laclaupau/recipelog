@@ -1,7 +1,10 @@
-Responsive static webpage made with HTML5 and CSS3.
+# Cooking recipes log
+
+Responsive static webpage.
 Meant as a recipe log and a way of decluttering my phone.
 
-To-do list:
-Overlay for onclick of .recipe-btn
-Footer with rrss -which I currently don't use but will
-Contact form
+## Technologies used
+HTML5, CSS3, Mobile-first design
+
+
+
